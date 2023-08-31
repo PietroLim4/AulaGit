@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/fundin.css">
+    <title> Cadastro </title>
+</head>
+
+<body>
+
+    <h2>Se Cadastre!</h2>
+
+    <form action="mailto:_" method="post">
+        <fieldset>
+            <legend>Informações do Aluno</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" placeholder="Exemplo: João" required size="26">
+
+            <br>
+
+            <label for="sNome">Sobrenome: </label>
+            <input type="text" id="sNome" placeholder="Exemplo: Silva" required size="21">
+
+            <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email1" placeholder="Exemplo: joaosilva@gmail.com" required size="25">
+
+
+            <br>
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" placeholder="Exemplo: 12três4" required size="26">
+            <br>
+
+            <h3>Com que cor você se autodeclara:</h3>
+
+            <input type="radio" name="cor" id="op_p1">
+            <label for="op_p1">Preto</label><br>
+
+            <input type="radio" name="cor" id="op_p2">
+            <label for="op_p2">Branco</label><br>
+
+            <input type="radio" name="cor" id="op_p3">
+            <label for="op_p3">Pardo</label><br>
+
+            <input type="radio" name="cor" id="op_p4">
+            <label for="op_p4">Amarelo</label><br>
+
+            <input type="radio" name="cor" id="op_p5">
+            <label for="op_p5">Indigena</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Informações Cadastrais</legend>
+
+            <h3>Curso Matriculado:</h3>
+
+            <input type="radio" name="curso" id="op_c1">
+            <label for="op_c1">Gestão ERP</label><br>
+
+            <input type="radio" name="curso" id="op_c2">
+            <label for="op_c2">Dev. Web</label><br>
+
+            <input type="radio" name="curso" id="op_c3">
+            <label for="op_c3">Suporte TI</label><br>
+
+            <input type="radio" name="curso" id="op_c4">
+            <label for="op_c4">Microsoft Office</label>
+
+
+
+            <h3>Que curso você já fez?</h3>
+
+            <input type="checkbox" name="cursoFeito1" id="cF1">
+            <label for="cF1">Gestão ERP</label><br>
+
+            <input type="checkbox" name="cursoFeito2" id="cF2">
+            <label for="cF2">Dev. Web</label><br>
+
+            <input type="checkbox" name="cursoFeito3" id="cF3">
+            <label for="cF3">Suporte TI</label><br>
+
+            <input type="checkbox" name="cursoFeito4" id="cF4">
+            <label for="cF4">Microsoft Office</label>
+
+
+            <br>
+
+            <h3>Qual meio de tranporte você usa?</h3>
+
+            <input type="checkbox" name="transporte1" id="transporte1">
+            <label for="transporte1">Bike</label><br>
+
+            <input type="checkbox" name="transporte2" id="transporte2">
+            <label for="transporte2">Carro</label><br>
+
+            <input type="checkbox" name="transporte3" id="transporte3">
+            <label for="transporte3">Metro</label><br>
+
+            <input type="checkbox" name="transporte4" id="transporte4">
+            <label for="transporte4">Ônibus</label><br>
+
+            <input type="checkbox" name="transporte5" id="transporte5">
+            <label for="transporte5">Nenhum (Vai a pé)</label>
+
+            <br><br>
+
+            <label for="times">Escolha seu time:</label>
+
+            <select name="times" id="times">
+
+                <option value="desabilitado" selected disabled>Opções</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="santos">Santos</option>
+                <option value="vasco">Vasco</option>
+                <option value="gremio">Grêmio</option>
+                <option value="Nenhum">Nenhum</option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label for="cCid">Sua cidade:</label>
+
+            <input type="text" name="cCid" id="cCid" list="cidades">
+
+            <datalist id="cidades">
+
+                <option value="São Paulo"></option>
+                <option value="Juquitiba"></option>
+                <option value="Pinhalzinho"></option>
+                <option value="Angra dos Reis"></option>
+                <option value="Valinhos"></option>
+
+            </datalist>
+            <br><br>
+            <label for="comentario">Deixe sua sugestão:</label><br>
+            <textarea name="comentario" id="comentario" cols="50" rows="7" placeholder="Digite aqui."
+                maxlength="300"></textarea> <br>
+        </fieldset> <br>
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>

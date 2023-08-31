@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title> Cadastro </title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="diverso.HTML">Shrek</a> |
+            <a href="formAtiv.html">Cadastro</a>
+        </nav>
+    </header>
+    <main>
+        <form action="mailto:pietro.lima604@gmail.com" method="post">
+            <h1>Cadastro</h1>
+<fieldset>
+    <legend>Informações principais:</legend>
+            <label for="idade">Informe sua idade:</label><br>
+
+            <input type="radio" name="idade" id="menor">
+            <label for="menor">&#60;18</label><br>
+            <input type="radio" name="idade" id="maior">
+            <label for="maior">18-30</label><br>
+            <input type="radio" name="idade" id="velho">
+            <label for="velho">31-60</label><br>
+            <input type="radio" name="idade" id="idoso">
+            <label for="idoso">61+</label><br>
+<br>
+            <label for="estado">De que estado você é:</label>
+            <select name="estado" id="estado">
+                <option value="nenhum" selected disabled>Opções</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="bahia">Bahia</option>
+                <option value="rJ">Rio de Janeiro</option>
+                <option value="tocantins">Tocantins</option>
+                <option value="mG">Minas Gerais</option>
+            </select><br>
+<br>
+            <label for="email">Informe seu e-mail:</label>
+            <input type="email" name="email" id="email" required><br>
+
+            <label for="senha">Informe sua senha:</label>
+            <input type="password" name="senha" id="senha"><br>
+        </fieldset><br>
+
+            <label for=""></label>
+            <input type="checkbox" name="" id="">
+
+            <br>
+            <label for="sugestoes">Digite sua Sugestão</label><br>
+            <textarea name="sugestoes" id="sugestoes" cols="30" rows="7" placeholder="Digite sua Sugestão aqui."
+                maxlength="300"></textarea><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <small>&copy;Todos os Direitos Reservados</small>
+    </footer>
+</body>
+
+</html>

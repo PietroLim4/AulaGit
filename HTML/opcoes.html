@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="">
+    <title>Opções</title>
+</head>
+
+<body>
+    <h1>Cadastro</h1>
+    <form action="mailto:pietrohenriques427@gmail.com" method="post">
+        <fieldset>
+            <legend>Informações do Aluno</legend>
+
+            <label for="cNome">Nome: </label>
+            <input type="text" id="cNome" placeholder="Exemplo: João" size="26">
+
+            <br>
+
+            <label for="sNome">Sobrenome: </label>
+            <input type="text" id="sNome" placeholder="Exemplo: Silva" size="21">
+
+            <br>
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" placeholder="Exemplo: joaosilva@gmail.com" size="25">
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Informações Cadastrais</legend>
+
+            <label for="times">Escolha seu time:</label>
+
+            <select name="times" id="times">
+
+                <option value="desabilitado" selected disabled>Opções</option>
+                <option value="saoPaulo">São Paulo</option>
+                <option value="santos">Santos</option>
+                <option value="vasco">Vasco</option>
+                <option value="gremio">Grêmio</option>
+                <option value="nenhum">Nenhum</option>
+
+            </select>
+
+
+            <br><br>
+
+
+            <label for="cCid">Sua cidade:</label>
+
+            <input type="text" name="cCid" id="cCid" list="cidades">
+
+            <datalist id="cidades">
+
+                <option value="São Paulo"></option>
+                <option value="Juquitiba"></option>
+                <option value="Pinhalzinho"></option>
+                <option value="Angra dos Reis"></option>
+                <option value="Valinhos"></option>
+
+            </datalist>
+            <br><br>
+            <label for="comentario">Deixe sua sugestão:</label><br>
+            <textarea name="comentario" id="comentario" cols="50" rows="7" placeholder="Digite aqui."
+                maxlength="300"></textarea>
+        </fieldset> <br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
