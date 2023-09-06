@@ -1,0 +1,14 @@
+.cr1 {color: black;}
+.cr2 {color: orange;}
+.cr3 {color: purple;}
+.cr4 {color: blue;}
+.cr5 {color: red;}
+
+footer{
+    background-color: deeppink;
+}
+body{
+    background-color: #f0f2b8;
+    color: darkturquoise;
+    font-family: 'Roboto', sans-serif;
+}
